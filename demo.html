@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Countdown Demo</title>
+  <style>
+    
+    body {
+      background-color: #373737;
+      font-family: 'Century Gothic',Arial;
+    }
+    
+    time {
+      color: #34c7c2;
+      font-size: 72px;
+    }
+
+    text {
+      text-anchor: middle;
+      dominant-baseline: middle;
+    }
+    
+    #countdownContainer {
+      width:520px;
+      height:110px;
+    }
+    .countdownComponent {
+      width: 110px;
+      height: 110px;
+      float: right;
+      margin: 0 10px;
+    }
+
+    .progressbar {
+      fill: #484848;
+      stroke: #34c7c2;
+      stroke-width: 14;
+    }
+    
+    .bg {
+      fill: #484848;
+    }
+    
+    .overlay {
+      fill: #373737;
+    }
+
+    .time {
+      fill: #fff;
+      font-size: 29px;
+      font-weight: bold;
+    }
+
+    .label {
+      fill: #fff;
+      font-size: 10px;
+    }
+  </style>
+  <script type="text/javascript" src="svg-countdown.js"></script>
+</head>
+<body>
+  <time datetime="2014-12-25T00:00:00Z">25/09/2014</time>
+  <script type="text/javascript">
+    svgCountdown(document.getElementsByTagName('time'));
+  </script>
+</body>
+</html>
