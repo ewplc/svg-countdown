@@ -41,7 +41,7 @@ function svgCountdown(elements) {
       countdownContainer.appendChild(countdownComponent);
       var style = window.getComputedStyle(countdownComponent);
       var width = parseInt(style.width);
-      var fragment = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" xml:space="preserve" id="countdown">\
+      var fragment = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" xml:space="preserve">\
 <circle class="bg" cx="50%" cy="50%" r="50%" stroke-width="0" /> \
 <circle cx="50%" cy="50%" r="43.6363636%" class="progressbar" transform="rotate(-90 ' + width / 2 + ' ' + width / 2 + ')" /> \
 <circle class="overlay" cx="50%" cy="50%" r="37.2727273%" stroke-width="0" /> \
